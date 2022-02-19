@@ -96,9 +96,9 @@ importers:
       vite: ^2.8.1
       vitest: latest
     devDependencies:
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_@vitest+ui@0.4.2+c8@7.11.0
 
   examples/lit:
     specifiers:
@@ -110,10 +110,10 @@ importers:
     dependencies:
       lit: 2.1.3
     devDependencies:
-      '@vitest/ui': link:../../packages/ui
-      happy-dom: 2.33.1
+      '@vitest/ui': 0.4.2
+      happy-dom: 2.39.1
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_8b65923862a078d12bbcb4de32f38a79
 
   examples/mocks:
     specifiers:
@@ -128,9 +128,9 @@ importers:
       axios: 0.26.0
       tinyspy: 0.2.10
     devDependencies:
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_@vitest+ui@0.4.2+c8@7.11.0
 
   examples/puppeteer:
     specifiers:
@@ -139,10 +139,10 @@ importers:
       vite: ^2.8.1
       vitest: latest
     devDependencies:
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       puppeteer: 13.0.0
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_@vitest+ui@0.4.2+c8@7.11.0
 
   examples/react:
     specifiers:
@@ -161,11 +161,11 @@ importers:
       '@types/react': 17.0.39
       '@types/react-test-renderer': 17.0.1
       '@vitejs/plugin-react': 1.2.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       happy-dom: 2.31.1
       jsdom: 19.0.0
       react-test-renderer: 17.0.2_react@17.0.2
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_64a17feab8f1970d45ab872a136a17f2
 
   examples/react-enzyme:
     specifiers:
@@ -186,11 +186,11 @@ importers:
       '@types/react': 17.0.39
       '@types/react-dom': 17.0.11
       '@vitejs/plugin-react': 1.2.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       enzyme: 3.11.0
       enzyme-adapter-react-16: 1.15.6_fae758709a8810ba97b4c03852dde4d0
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_@vitest+ui@0.4.2+c8@7.11.0
 
   examples/react-mui:
     specifiers:
@@ -229,11 +229,11 @@ importers:
       '@testing-library/jest-dom': 5.16.2
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       date-fns: 2.28.0
       jsdom: 19.0.0
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_2e131ea0b39f498a3a2f1c2346d16a87
 
   examples/react-storybook-testing:
     specifiers:
@@ -280,7 +280,7 @@ importers:
       '@types/react': 17.0.39
       '@types/react-dom': 17.0.11
       '@vitejs/plugin-react': 1.2.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       babel-loader: 8.2.3_@babel+core@7.17.4
       jsdom: 19.0.0
       msw: 0.36.8
@@ -288,7 +288,7 @@ importers:
       storybook-builder-vite: 0.1.15_5cdc48f5c3afc3afa983ff9e55514ad0
       typescript: 4.5.5
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_2e131ea0b39f498a3a2f1c2346d16a87
 
   examples/react-testing-lib:
     specifiers:
@@ -316,10 +316,10 @@ importers:
       '@types/react': 17.0.39
       '@types/react-dom': 17.0.11
       '@vitejs/plugin-react': 1.2.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       jsdom: 19.0.0
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_2e131ea0b39f498a3a2f1c2346d16a87
 
   examples/react-testing-lib-msw:
     specifiers:
@@ -347,12 +347,12 @@ importers:
       '@types/react': 17.0.39
       '@types/react-dom': 17.0.11
       '@vitejs/plugin-react': 1.2.0
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       cross-fetch: 3.1.5
       jsdom: 19.0.0
       msw: 0.36.8
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_2e131ea0b39f498a3a2f1c2346d16a87
 
   examples/ruby:
     specifiers:
@@ -367,7 +367,7 @@ importers:
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
       jsdom: 19.0.0
       vite-plugin-ruby: 3.0.8_vite@2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_c8@7.11.0+jsdom@19.0.0
       vue: 3.2.26
 
   examples/solid:
@@ -381,7 +381,7 @@ importers:
     devDependencies:
       jsdom: 19.0.0
       solid-start: 0.1.0-alpha.61_solid-js@1.3.7+vite@2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_c8@7.11.0+jsdom@19.0.0
 
   examples/svelte:
     specifiers:
@@ -394,10 +394,10 @@ importers:
     devDependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.8.3
       '@testing-library/svelte': 3.0.3_svelte@3.46.4
-      '@vitest/ui': link:../../packages/ui
+      '@vitest/ui': 0.4.2
       jsdom: 19.0.0
       svelte: 3.46.4
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_2e131ea0b39f498a3a2f1c2346d16a87
 
   examples/vitesse:
     specifiers:
@@ -413,10 +413,10 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue': 2.2.0_vite@2.8.3+vue@3.2.26
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
-      happy-dom: 2.33.1
+      happy-dom: 2.39.1
       unplugin-auto-import: 0.5.11_24d0de3b17dc3607f28e275fcf791fed
       unplugin-vue-components: 0.17.18_8a67a3e3b2c2a3c930a167f385dc8acd
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_c8@7.11.0+happy-dom@2.39.1
 
   examples/vue:
     specifiers:
@@ -430,8 +430,8 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue': 2.2.0_vite@2.8.3+vue@3.2.26
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
-      happy-dom: 2.33.1
-      vitest: link:../../packages/vitest
+      happy-dom: 2.39.1
+      vitest: 0.4.2_c8@7.11.0+happy-dom@2.39.1
 
   examples/vue-jsx:
     specifiers:
@@ -446,9 +446,9 @@ importers:
       '@vitejs/plugin-vue': 2.2.0_vite@2.8.3+vue@3.2.26
       '@vitejs/plugin-vue-jsx': 1.3.7
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
-      happy-dom: 2.33.1
+      happy-dom: 2.39.1
       vite: 2.8.3
-      vitest: link:../../packages/vitest
+      vitest: 0.4.2_c8@7.11.0+happy-dom@2.39.1
       vue: 3.2.26
 
   packages/ui:
@@ -6528,7 +6528,7 @@ packages:
   /@types/concat-stream/1.6.1:
     resolution: {integrity: sha512-eHE4cQPoj6ngxBZMvVf6Hw7Mh4jMW4U9lpGmS5GBPB9RYxlFg+CHaVN7ErNY4W9XfLIEn20b4VDYaIrbq0q4uA==}
     dependencies:
-      '@types/node': 17.0.14
+      '@types/node': 17.0.18
     dev: true
 
   /@types/cookie/0.4.1:
@@ -6584,7 +6584,7 @@ packages:
   /@types/form-data/0.0.33:
     resolution: {integrity: sha1-yayFsqX9GENbjIXZ7LUObWyJP/g=}
     dependencies:
-      '@types/node': 17.0.14
+      '@types/node': 17.0.18
     dev: true
 
   /@types/fs-extra/9.0.13:
@@ -7263,6 +7263,12 @@ packages:
     dependencies:
       vite: 2.8.3
       vue: 3.2.31
+    dev: true
+
+  /@vitest/ui/0.4.2:
+    resolution: {integrity: sha512-qpdnAHqV2L3+EUmDKl1yMHzsHXvOtHbVMe1cJWaB7/tfSM7OAax6KbiUXWZQwTGbG+NhveHn8PputK22vnrgAw==}
+    dependencies:
+      sirv: 2.0.2
     dev: true
 
   /@vue/babel-helper-vue-transform-on/1.0.2:
@@ -12311,9 +12317,10 @@ packages:
       - encoding
     dev: true
 
-  /happy-dom/2.33.1:
-    resolution: {integrity: sha512-Y6NxWMFZ/Os11Ir2A1LnA5QV3V0+f2ha2MteZXPKHT6o7U0DvPlD/1O6dTl2JxMWtenDflD9G8bo45Ah1D+79A==}
+  /happy-dom/2.39.1:
+    resolution: {integrity: sha512-xABIR1/klgdPw5yVhQvbrbpU9025dXpr4pPVP4UG0uITzoPGsYruoDYiDNYT69ZhkGrs4K3pg01uD91mijhJcg==}
     dependencies:
+      css.escape: 1.5.1
       he: 1.2.0
       node-fetch: 2.6.7
       sync-request: 6.1.0
@@ -17499,6 +17506,11 @@ packages:
     resolution: {integrity: sha512-Qij6rGWCDjWIejxCXXVi6bNgvrYBp3PbqC4cBP/0fD6WHDOHCw09Zd13CsxrDqSR5PFq01WeqDws8t5lz5sH0A==}
     engines: {node: '>=14.0.0'}
 
+  /tinyspy/0.3.0:
+    resolution: {integrity: sha512-c5uFHqtUp74R2DJE3/Efg0mH5xicmgziaQXMm/LvuuZn3RdpADH32aEGDRyCzObXT1DNfwDMqRQ/Drh1MlO12g==}
+    engines: {node: '>=14.0.0'}
+    dev: true
+
   /tmp/0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
     engines: {node: '>=0.6.0'}
@@ -18397,6 +18409,214 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.1.2
       tinyspy: 0.2.10
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_2e131ea0b39f498a3a2f1c2346d16a87:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      '@vitest/ui': 0.4.2
+      c8: 7.11.0
+      chai: 4.3.6
+      jsdom: 19.0.0
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_64a17feab8f1970d45ab872a136a17f2:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      '@vitest/ui': 0.4.2
+      c8: 7.11.0
+      chai: 4.3.6
+      happy-dom: 2.31.1
+      jsdom: 19.0.0
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_8b65923862a078d12bbcb4de32f38a79:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      '@vitest/ui': 0.4.2
+      c8: 7.11.0
+      chai: 4.3.6
+      happy-dom: 2.39.1
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_@vitest+ui@0.4.2+c8@7.11.0:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      '@vitest/ui': 0.4.2
+      c8: 7.11.0
+      chai: 4.3.6
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_c8@7.11.0+happy-dom@2.39.1:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      c8: 7.11.0
+      chai: 4.3.6
+      happy-dom: 2.39.1
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
+      vite: 2.8.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+    dev: true
+
+  /vitest/0.4.2_c8@7.11.0+jsdom@19.0.0:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
+    engines: {node: '>=14.14.0'}
+    hasBin: true
+    peerDependencies:
+      '@vitest/ui': '*'
+      c8: '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@vitest/ui':
+        optional: true
+      c8:
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.0
+      '@types/chai-subset': 1.3.3
+      c8: 7.11.0
+      chai: 4.3.6
+      jsdom: 19.0.0
+      local-pkg: 0.4.1
+      tinypool: 0.1.2
+      tinyspy: 0.3.0
       vite: 2.8.3
     transitivePeerDependencies:
       - less
