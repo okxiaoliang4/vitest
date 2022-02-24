@@ -1,9 +1,10 @@
 import { performance } from 'perf_hooks'
-import type { HookListener, ResolvedConfig, Suite, SuiteHooks, Task, TaskResult, Test } from '../types'
+import type { File, HookListener, ResolvedConfig, Suite, SuiteHooks, Task, TaskResult, Test } from '../types'
 import { vi } from '../integrations/vi'
 import { getSnapshotClient } from '../integrations/snapshot/chai'
 import { getFullName, hasFailed, hasTests, partitionSuiteChildren } from '../utils'
 import { getState, setState } from '../integrations/chai/jest-expect'
+import { takeCoverage } from '../integrations/coverage'
 import { getFn, getHooks } from './map'
 import { rpc } from './rpc'
 import { collectTests } from './collect'
@@ -63,7 +64,7 @@ export async function runTest(test: Test) {
 
   getSnapshotClient().setTest(test)
 
-  process.__vitest_worker__.current = test
+  __vitest_worker__.current = test
 
   try {
     await callSuiteHook(test.suite, 'beforeEach', [test, test.suite])
@@ -114,7 +115,7 @@ export async function runTest(test: Test) {
 
   test.result.duration = performance.now() - start
 
-  process.__vitest_worker__.current = undefined
+  __vitest_worker__.current = undefined
 
   updateTask(test)
 }
@@ -195,9 +196,17 @@ async function runSuiteChild(c: Task) {
     : runSuite(c)
 }
 
-export async function runSuites(suites: Suite[]) {
-  for (const suite of suites)
-    await runSuite(suite)
+export async function runFiles(files: File[], config: ResolvedConfig) {
+  for (const file of files) {
+    if (!file.tasks.length && !config.passWithNoTests) {
+      file.result = {
+        state: 'fail',
+        error: new Error(`No test suite found in file ${file.filepath}`),
+      }
+    }
+
+    await runSuite(file)
+  }
 }
 
 export async function startTests(paths: string[], config: ResolvedConfig) {
@@ -205,7 +214,9 @@ export async function startTests(paths: string[], config: ResolvedConfig) {
 
   rpc().onCollected(files)
 
-  await runSuites(files)
+  await runFiles(files, config)
+
+  takeCoverage()
 
   await getSnapshotClient().saveSnap()
 
@@ -213,7 +224,7 @@ export async function startTests(paths: string[], config: ResolvedConfig) {
 }
 
 export function clearModuleMocks() {
-  const { clearMocks, mockReset, restoreMocks } = process.__vitest_worker__.config
+  const { clearMocks, mockReset, restoreMocks } = __vitest_worker__.config
 
   // since each function calls another, we can just call one
   if (restoreMocks)
